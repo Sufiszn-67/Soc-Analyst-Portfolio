@@ -35,10 +35,11 @@ The focus of this portfolio is to demonstrate real-world cybersecurity capabilit
 - Linux CLI  
 
 ---
-
-| Room | Skill | Write-Up |
-|------|-------|----------|
-| Splunk 101 | Log Analysis | [View](./01-TryHackMe-Labs/Splunk-101/) |
+| Room | Category | Skill Practised | Write-Up |
+|------|----------|-----------------|----------|
+| Splunk 101 | TryHackMe | Log Analysis | 🔜 Coming soon |
+| Wireshark Basics | TryHackMe | Network Traffic | 🔜 Coming soon |
+| Cisco Splunk Course | Cisco | SIEM / Log Analysis | 🔜 Coming soon |
 
 ---
 
