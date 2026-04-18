@@ -41,7 +41,7 @@ The focus of this portfolio is to demonstrate real-world cybersecurity capabilit
 |------|----------|-----------------|----------|
 | Splunk 101 | TryHackMe | Log Analysis | 🔜 Coming soon |
 | Wireshark Basics | TryHackMe | Network Traffic | 🔜 Coming soon |
-| Cisco Splunk Course | Cisco | SIEM / Log Analysis | 🔜 Coming soon |
+| Cisco Splunk Course | Cisco | SIEM / Log Analysis | [View](./02-Certifications/Cisco-Splunk-Course/writeup.md) |
 
 ---
 
