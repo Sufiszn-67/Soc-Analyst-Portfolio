@@ -35,6 +35,8 @@ The focus of this portfolio is to demonstrate real-world cybersecurity capabilit
 - Linux CLI  
 
 ---
+## 🗂️ Lab Write-Ups
+
 | Room | Category | Skill Practised | Write-Up |
 |------|----------|-----------------|----------|
 | Splunk 101 | TryHackMe | Log Analysis | 🔜 Coming soon |
