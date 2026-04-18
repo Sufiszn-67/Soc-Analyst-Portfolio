@@ -36,8 +36,9 @@ The focus of this portfolio is to demonstrate real-world cybersecurity capabilit
 
 ---
 
-## 📂 Lab Write-Ups
-Labs will be added here as I progress through the TryHackMe Security Analyst Path.
+| Room | Skill | Write-Up |
+|------|-------|----------|
+| Splunk 101 | Log Analysis | [View](./01-TryHackMe-Labs/Splunk-101/) |
 
 ---
 
