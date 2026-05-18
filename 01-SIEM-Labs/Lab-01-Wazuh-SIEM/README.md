@@ -4,7 +4,7 @@
 
 
 
-This lab was designed to simulate how a real-world cyberattack would unfold when vulnerabilities are present on endpoint. The overall goal was to understand how threat actors perform reconnaissance and brute force attacks, and how SOC analyst monitors and detect those attacks through a security information and events management tool. Therefore by building this environment from scratch, I gained hands-on experience from both the offensive and defensive sides of a security incident.
+This lab was designed to simulate how a real-world cyberattack would unfold when vulnerabilities are present on endpoint. The overall goal was to understand how threat actors perform reconnaissance and brute force attacks and how SOC analyst monitors and detect those attacks through a security information and events management tool. Therefore by building this environment from scratch, I gained hands-on experience from both the offensive and defensive sides of a security incident.
 
 ---
 
@@ -30,3 +30,19 @@ All three machines were connected via the NAT Network which I named SOC-Lab-01-W
 An important fact to note: 
 
 The Wazuh SEIM server was given a static IP address rather than the standard DHCP which automatically assigns a random IP address which would have caused confusions and become problematic for us in the future, hence why I gave it a permanent IP address.
+
+---
+
+## Tools Used 
+
+
+The primary tools used within the lab was the Wazuh OVA, deployed as the SIEM server and its agent on the target machine. Wazuh was the foundation and fundamental tool in this entire lab. It collected logs, detected threats and displayed alerts through its dashboard. Additionally, I also utilised Nmap scans for reconnaissance, by scanning the target machine in order to find open ports to exploit. After the scan I used Hydra in order to execute brute force attacks against the RDP service on the target machine via the Rockyou.txt wordlists. 
+
+
+| Tool | Version | Purpose |
+|------|---------|---------|
+| Wazuh | v4.14.5 | SIEM — log collection, threat detection, alert dashboard |
+| Nmap | v7.98 | Network reconnaissance — port and service scanning |
+| Hydra | - | Brute force attack tool |
+| Rockyou.txt | - | Password wordlist used with Hydra |
+| VirtualBox | - | Virtualisation and network management |
