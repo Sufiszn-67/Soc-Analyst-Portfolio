@@ -18,10 +18,15 @@ The lab consisted of three virtual machines all simultaneously running on the sa
 - Kali Linux 2026.1 – The attacker machine.
 
 
-All three machines were connected via the Nat Network which I named SOC-Lab-01-Wazuh for familiarly sake within the subnet 10.0.2.0/24 provided automatically, which allowed them to all communicate with each other whilst remaining completely isolated from the real network.
+All three machines were connected via the NAT Network which I named SOC-Lab-01-Wazuh for familiarly sake within the subnet 10.0.2.0/24 provided automatically, which allowed them to all communicate with each other whilst remaining completely isolated from the real network.
 
 | Machine | Role | IP Address |
 |---------|------|------------|
 | Wazuh v4.14.5 | SIEM Server | 10.0.2.10 |
 | Windows 10 Pro | Target Machine | 10.0.2.5 |
 | Kali Linux 2026.1 | Attacker Machine | 10.0.2.6 |
+
+
+An important fact to note: 
+
+The Wazuh SEIM server was given a static IP address rather than the standard DHCP which automatically assigns a random IP address which would have caused confusions and become problematic for us in the future, hence why I gave it a permanent IP address.
