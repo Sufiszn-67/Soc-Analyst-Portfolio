@@ -36,8 +36,7 @@ Final-year BSc Cybersecurity student building a hands-on SOC portfolio through r
 - Hydra
 - Kali Linux
 - VirtualBox
-- Windows Event Viewer
-- Linux CLI
+- Oracle VM VirtualBox Guest Additions
 
 ---
 
