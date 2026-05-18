@@ -1,49 +1,64 @@
 # 🛡️ SOC Analyst Portfolio
 
-## 📌 Overview
-This repository documents my hands-on training through the TryHackMe Security Analyst Path, showcasing practical skills aligned with Security Operations Center (SOC) analyst roles.
-
-The focus of this portfolio is to demonstrate real-world cybersecurity capabilities, including threat detection, log analysis, and incident response in simulated environments.
+## 🚀 Overview
+Final-year BSc Cybersecurity student building a hands-on SOC portfolio through real home labs, structured courses, and TryHackMe training. Focused on threat detection, log analysis, and incident response aligned with SOC Tier 1 analyst roles.
 
 ---
 
-## 🎯 Objectives
-- Develop practical SOC analyst skills  
-- Gain experience with security tools and workflows  
-- Understand real-world attack techniques and detection methods  
-- Build a portfolio to demonstrate job-ready cybersecurity knowledge  
+## 📁 Portfolio Structure
+
+| # | Section | Description | Status |
+|---|---------|-------------|--------|
+| 01 | SIEM Labs | Home lab environments using open-source and commercial SIEMs | 🔄 In Progress |
+| 02 | Certifications & Courses | Completed courses and certifications | ✅ Active |
+| 03 | Malware Analysis | Static and dynamic malware analysis labs | 🔜 Coming Soon |
+| 04 | TryHackMe | SOC Level 1 path write-ups | 🔜 Coming Soon |
 
 ---
 
-## 🧠 Skills Gained
-- Threat Detection & Analysis  
-- Log Analysis & Correlation  
-- Alert Triage & Investigation  
-- SIEM (Security Information and Event Management)  
-- Incident Response & Handling  
-- Network Traffic Analysis  
-- Malware & Attack Techniques (MITRE ATT&CK)  
+## 🔧 Skills Gained
+- Threat Detection & Analysis
+- Log Analysis & Correlation
+- Alert Triage & Investigation
+- SIEM Deployment & Configuration
+- Incident Response & Documentation
+- Network Traffic Analysis
+- Malware & Attack Techniques (MITRE ATT&CK)
+- Brute Force Detection
+- Network Reconnaissance Detection
 
 ---
 
 ## 🛠️ Tools & Technologies
-- Splunk  
-- Wireshark  
-- ELK Stack  
-- Sysmon  
-- Windows Event Viewer  
-- Linux CLI  
-
----
-## 🗂️ Lab Write-Ups
-
-| Room | Category | Skill Practised | Write-Up |
-|------|----------|-----------------|----------|
-| Splunk 101 | TryHackMe | Log Analysis | 🔜 Coming soon |
-| Wireshark Basics | TryHackMe | Network Traffic | 🔜 Coming soon |
-| Cisco Splunk Course | Cisco | SIEM / Log Analysis | [View](./02-Certifications/Cisco-Splunk-Course/writeup.md) |
+- Wazuh SIEM v4.14.5
+- Splunk (in progress)
+- Nmap
+- Hydra
+- Kali Linux
+- VirtualBox
+- Windows Event Viewer
+- Linux CLI
 
 ---
 
-## 🚀 Career Goal
-Aspiring SOC Analyst with a strong foundation in cybersecurity operations, actively seeking opportunities to apply and further develop skills in a professional security environment.
+## 🏠 Home Labs
+
+| Lab | Type | Tools Used | Status |
+|-----|------|------------|--------|
+| [Lab 01 — Wazuh SIEM](./01-SIEM-Labs/Lab-01-Wazuh-SIEM/) | Open Source SIEM | Wazuh, Nmap, Hydra, Kali | ✅ Complete |
+| Lab 02 — Splunk | Commercial SIEM | Splunk | 🔜 Coming Soon |
+
+---
+
+## 📜 Certifications & Courses
+
+| Course | Provider | Status |
+|--------|----------|--------|
+| CompTIA Security+ SY0-701 | CompTIA | 🔄 In Progress |
+| Cisco Splunk Course | Cisco | ✅ Complete |
+| SOC Level 1 Path | TryHackMe | 🔄 In Progress |
+
+---
+
+## 🎯 Career Goal
+Aspiring SOC Analyst targeting Tier 1 roles in the UK, with a long-term goal of progressing into DevSecOps. Building practical skills through real home lab environments that mirror enterprise SOC workflows.
