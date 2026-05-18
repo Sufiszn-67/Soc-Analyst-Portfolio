@@ -55,7 +55,7 @@ Final-year BSc Cybersecurity student building a hands-on SOC portfolio through r
 | Course | Provider | Status |
 |--------|----------|--------|
 | CompTIA Security+ SY0-701 | CompTIA | 🔄 In Progress |
-| Cisco Splunk Course | Cisco | ✅ Complete |
+| Cisco Splunk Course | Cisco | 🔄 in progress |
 | SOC Level 1 Path | TryHackMe | 🔄 In Progress |
 
 ---
