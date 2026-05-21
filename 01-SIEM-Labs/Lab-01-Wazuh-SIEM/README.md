@@ -56,6 +56,7 @@ The kali Linux attacker machine situated at 10.0.2.6 launches attacks against th
 
 Below is a visualisation of the Lab topology: 
 
+```
 Kali Linux (10.0.2.6)
         ↓ attacks
 Windows 10 (10.0.2.5)
@@ -63,11 +64,20 @@ Windows 10 (10.0.2.5)
 Wazuh Server (10.0.2.10)
         ↓
 SOC Analyst Dashboard
-
+```
 ---
 
 ## Phase 1- NAT Network Setup
 
 In Phase 1, I began by interconnecting all three virtual machines via an isolated NAT Network named SOC-Lab-01-Wazuh on subnet 10.0.2.0/24. This network type was chosen as it was imperative to host the machines on a network that allows isolation from the real network whilst still allowing communication between the VMs themselves. Given that the lab involved a dangerous attacker machine such as Kali Linux, isolating the environment was a critical security consideration. NAT Network fit this requirement perfectly.
 
-![NAT Network Created](./screenshots/01-NAT-Network-Created.png)
+<img src="./screenshots/01-NAT-Network-Created.png" width="600"/>
+
+---
+
+## Phase 2- Wazuh Server Deployment
+
+in Phase 2, I imported the first of three virtual machines in the Oracle VM VirtualBox, The essence of this home lab, the Wazuh SIEM Server. Once deployed and connected to the NAT Network named SOC-Lab-01-Wazuh, I then assigned it a static IP address of 10.0.2.10 rather than its default DHCP setting to ensure the Wazuh agents on the endpoint machine can respond back to the Wazuh server with the telemetry findings.
+
+<img src="./screenshots/02-Wazuh-Imported.png" width="600"/>
+<img src="./screenshots/03-Wazuh-Network-Configured.png" width="600"/>
