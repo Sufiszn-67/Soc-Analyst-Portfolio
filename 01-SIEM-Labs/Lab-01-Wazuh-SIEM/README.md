@@ -70,4 +70,4 @@ SOC Analyst Dashboard
 
 In Phase 1, I began by interconnecting all three virtual machines via an isolated NAT Network named SOC-Lab-01-Wazuh on subnet 10.0.2.0/24. This network type was chosen as it was imperative to host the machines on a network that allows isolation from the real network whilst still allowing communication between the VMs themselves. Given that the lab involved a dangerous attacker machine such as Kali Linux, isolating the environment was a critical security consideration. NAT Network fit this requirement perfectly.
 
-![NAT Network Created](./Screenshots/01-NAT-Network-Created.png)
+![NAT Network Created](./screenshots/01-NAT-Network-Created.png)
