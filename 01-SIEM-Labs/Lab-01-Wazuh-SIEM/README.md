@@ -46,3 +46,28 @@ The primary tools used within the lab was the Wazuh OVA, deployed as the SIEM se
 | Hydra | - | Brute force attack tool |
 | Rockyou.txt | - | Password wordlist used with Hydra |
 | VirtualBox | - | Virtualisation and network management |
+
+
+---
+
+## Lab Architecture
+
+The kali Linux attacker machine situated at 10.0.2.6 launches attacks against the windows 10 target at 10.0.2.5 across an isolated NAT Network. The Wazuh agent deployed on the Windows 10 endpoint captures the resulting telemetry and forwards it to the Wazuh SIEM server at 10.0.2.10, which acts as the central nervous system of the lab. Following this, the Wazuh SIEM processes the incoming data and generates alerts which are then triaged, Thus filtering out the False positives to locate and identify the true positives that are critical. 
+
+Below is a visualisation of the Lab topology: 
+
+Kali Linux (10.0.2.6)
+        ↓ attacks
+Windows 10 (10.0.2.5)
+        ↓ telemetry via Wazuh Agent
+Wazuh Server (10.0.2.10)
+        ↓
+SOC Analyst Dashboard
+
+---
+
+## Phase 1- NAT Network Setup
+
+In Phase 1, I began by interconnecting all three virtual machines via an isolated NAT Network named SOC-Lab-01-Wazuh on subnet 10.0.2.0/24. This network type was chosen as it was imperative to host the machines on a network that allows isolation from the real network whilst still allowing communication between the VMs themselves. Given that the lab involved a dangerous attacker machine such as Kali Linux, isolating the environment was a critical security consideration. NAT Network fit this requirement perfectly.
+
+![NAT Network Created](./Screenshots/01-NAT-Network-Created.png)
