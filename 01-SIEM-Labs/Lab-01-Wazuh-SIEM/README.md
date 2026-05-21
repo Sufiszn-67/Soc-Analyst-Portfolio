@@ -81,3 +81,17 @@ in Phase 2, I imported the first of three virtual machines in the Oracle VM Virt
 
 <img src="./screenshots/02-Wazuh-Imported.png" width="600"/>
 <img src="./screenshots/03-Wazuh-Network-Configured.png" width="600"/>
+
+---
+
+## Phase 3- Kali Linux Setup
+
+In phase 3, once extracted the Kali Linux folder, I then imported the Kali Linux VM onto the Oracle VM VirtualBox. Its imperative to note that I also configured this Virtual Machine to the NAT Network SOC-Lab-01-Wazuh as it is also one of the machines that needed to be deployed to make this home lab work. A little fact to note, I didn't assign a static IP address to this Virtual Machine as it's the attacker machine and doesn't need a fixed address as only the Wazuh server required one so its agents could always find it
+
+<img src="./screenshots/04-Kali-Imported.png" width="600"/>
+<img src="./screenshots/05-Kali-Network-Configured.png" width="600"/>
+
+---
+
+## Phase 4 - Windows 10 Target Setup
+
