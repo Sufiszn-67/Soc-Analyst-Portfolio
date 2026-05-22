@@ -95,3 +95,21 @@ In phase 3, once extracted the Kali Linux folder, I then imported the Kali Linux
 
 ## Phase 4 - Windows 10 Target Setup
 
+Phase 4 showcases the integration of deploying the recently installed Windows 10 ISO image into my file explorer and then importing it into the Oracle VM Virtualbox. Just like the previous virtual machines, this endpoint machine was interconnected with the others via the NAT Network type named SOC-Lab-01-Wazuh. The Windows 10 target setup is extremely crucial as it will be serving as the point where the Wazuh agents will collect telemetry and report back to the Wazuh server, all visible on the dashboard.
+
+
+<img src="./screenshots/06-Windows10-Summary.png" width="600"/>
+<img src="./screenshots/07-Windows10-Network-Configured.png" width="600"/>
+
+---
+
+## All VMs Ready
+
+Phase 5 confirmed that all three virtual machines were running simultaneously and successfully connected on the same isolated NAT Network infrastructure. Having no obstacles at this was vital, it showcased that the lab infrastructure was correctly configured and ready for the proceeding phase. With the Wazuh server, Windows 10 target machine and Kali Linux attacker all operational and communicating with each other, the environment was fully prepared for attack simulation and threat detection.
+
+<img src="./screenshots/08-All-VMs-Ready.png" width="600"/>
+
+---
+
+## Wazuh Dashboard Access & Agent Deployment
+
