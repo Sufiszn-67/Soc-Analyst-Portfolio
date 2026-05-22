@@ -44,7 +44,7 @@ Final-year BSc Cybersecurity student building a hands-on SOC portfolio through r
 | Lab | Type | Tools Used | Status |
 |-----|------|------------|--------|
 | [Lab 01 — Wazuh SIEM](./01-SIEM-Labs/Lab-01-Wazuh-SIEM/) | Open Source SIEM | Wazuh, Nmap, Hydra, Kali | ✅ Complete |
-| Lab 02 — Splunk | Commercial SIEM | Splunk | 🔜 Coming Soon |
+| Lab 02 — Splunk | proprietary  SIEM | Splunk | 🔜 Pending |
 
 ---
 
