@@ -60,4 +60,4 @@ Final-year BSc Cybersecurity student building a hands-on SOC portfolio through r
 ---
 
 ## 🎯 Career Goal
-Aspiring SOC Analyst targeting Tier 1 roles in the UK, with a long-term goal of progressing into DevSecOps. Building practical skills through real home lab environments that mirror enterprise SOC workflows.
+Aspiring SOC Analyst targeting Tier 1 roles in the UK, with a long-term goal of progressing into Cloud Computing. Building practical skills through real home lab environments that mirror enterprise SOC workflows.
