@@ -11,8 +11,8 @@ Final-year BSc Cybersecurity student building a hands-on SOC portfolio through r
 |---|---------|-------------|--------|
 | 01 | SIEM Labs | Home lab environments using open-source and commercial SIEMs | ✅ Active |
 | 02 | Certifications & Courses | Completed courses and certifications | ✅ Active |
-| 03 | Malware Analysis | Static and dynamic malware analysis labs | 🔜 Coming Soon |
-| 04 | TryHackMe | SOC Level 1 path write-ups | 🔜 Coming Soon |
+| 03 | Malware Analysis | Static and dynamic malware analysis labs | 🔜 Pending |
+| 04 | TryHackMe | SOC Level 1 path write-ups | 🔜 Pending |
 
 ---
 
@@ -23,7 +23,6 @@ Final-year BSc Cybersecurity student building a hands-on SOC portfolio through r
 - SIEM Deployment & Configuration
 - Incident Response & Documentation
 - Network Traffic Analysis
-- Malware & Attack Techniques (MITRE ATT&CK)
 - Brute Force Detection
 - Network Reconnaissance Detection
 
@@ -53,9 +52,9 @@ Final-year BSc Cybersecurity student building a hands-on SOC portfolio through r
 
 | Course | Provider | Status |
 |--------|----------|--------|
-| CompTIA Security+ SY0-701 | CompTIA | 🔄 In Progress |
-| Cisco Splunk Course | Cisco | 🔄 in progress |
-| SOC Level 1 Path | TryHackMe | 🔄 In Progress |
+| CompTIA Security+ SY0-701 | CompTIA | 🔄 scheduled [July] [2026] |
+| Cisco Splunk Course | Cisco | 🔄 Pending |
+| SOC Level 1 Path | TryHackMe | 🔄 Pending |
 
 ---
 
