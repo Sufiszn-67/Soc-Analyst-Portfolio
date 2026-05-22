@@ -9,7 +9,7 @@ Final-year BSc Cybersecurity student building a hands-on SOC portfolio through r
 
 | # | Section | Description | Status |
 |---|---------|-------------|--------|
-| 01 | SIEM Labs | Home lab environments using open-source and commercial SIEMs | 🔄 In Progress |
+| 01 | SIEM Labs | Home lab environments using open-source and commercial SIEMs | ✅ Active |
 | 02 | Certifications & Courses | Completed courses and certifications | ✅ Active |
 | 03 | Malware Analysis | Static and dynamic malware analysis labs | 🔜 Coming Soon |
 | 04 | TryHackMe | SOC Level 1 path write-ups | 🔜 Coming Soon |
