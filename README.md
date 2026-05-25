@@ -11,8 +11,7 @@ Final-year BSc Cybersecurity student building a hands-on SOC portfolio through r
 |---|---------|-------------|--------|
 | 01 | SIEM Labs | Home lab environments using open-source and commercial SIEMs | ✅ Active |
 | 02 | Certifications & Courses | Completed courses and certifications | ✅ Active |
-| 03 | Malware Analysis | Static and dynamic malware analysis labs | 🔜 Pending |
-| 04 | TryHackMe | SOC Level 1 path write-ups | 🔜 Pending |
+| 03 | TryHackMe | SOC Level 1 path write-ups | ✅ Active |
 
 ---
 
@@ -52,11 +51,17 @@ Final-year BSc Cybersecurity student building a hands-on SOC portfolio through r
 
 | Course | Provider | Status |
 |--------|----------|--------|
-| CompTIA Security+ SY0-701 | CompTIA | 🔄 scheduled [July] [2026] |
+| CompTIA Security+ SY0-701 | CompTIA | 📅 scheduled [July] [2026] |
 | Cisco Splunk Course | Cisco | 🔄 Pending |
-| SOC Level 1 Path | TryHackMe | 🔄 Pending |
 
 ---
+
+## 🔍 TryHackMe Write-Ups
+
+Hands-on investigation writeups from the 
+TryHackMe SOC Level 1 learning path.
+
+📂 [View SOC Level 1 Investigations](./03-TryHackMe%20SOC%20Level%201)
 
 ## 🎯 Career Goal
 Aspiring SOC Analyst targeting Tier 1 roles in the UK, with a long-term goal of progressing into Cloud Computing. Building practical skills through real home lab environments that mirror enterprise SOC workflows.
