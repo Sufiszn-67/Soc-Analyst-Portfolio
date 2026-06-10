@@ -95,7 +95,7 @@ In phase 3, once extracted the Kali Linux folder, I then imported the Kali Linux
 
 ## Phase 4 - Windows 10 Target Setup
 
-Phase 4 showcases the integration of deploying the recently installed Windows 10 ISO image into my file explorer and then importing it into the Oracle VM Virtualbox. Just like the previous virtual machines, this endpoint machine was interconnected with the others via the NAT Network type named SOC-Lab-01-Wazuh. The Windows 10 target setup is extremely crucial as it will be serving as the point where the Wazuh agents will collect telemetry and report back to the Wazuh server, all visible on the dashboard.
+Phase 4 showcases the integration of deploying the recently installed Windows 10 ISO image into my file explorer and then importing it into the Oracle VM Virtualbox. Just like the previous virtual machines, this endpoint machine was interconnected with the others via the NAT Network type named SOC-Lab-01-Wazuh. The Windows 10 target setup is extremely crucial as it will be serving as the point were the Wazuh agents will collect telemetry and report back to the Wazuh server, all visible on the dashboard.
 
 
 <img src="./screenshots/06-Windows10-Summary.png" width="600"/>
@@ -127,3 +127,37 @@ Phase 6 brought the SOC lab to life. The Wazuh server was first assigned a stati
 ---
 
 ## Phase 7 - Attack Simulation
+
+## Attack 1 - Nmap Network Reconnaissance
+
+In Attack 1, reconnaissance was performed against the target machine using Nmap. The command used was nmap -sV 10.0.2.5, scanning the Windows 10 target for open ports and running services. The scan revealed four open ports — 135 (RPC), 139 (NetBIOS), 445 (SMB) and 3389 (RDP). Windows Firewall was disabled on the target machine to simulate a misconfigured endpoint, a common finding in real world environments. RDP on port 3389 was selected as the target for the brute force attack as it is one of the most commonly exploited services in real world attacks, allowing remote access to a machine if credentials are successfully compromised
+
+<img src="./screenshots/17-Nmap-Scan-Results.png" width="600"/>
+<img src="./screenshots/20-RDP-Port-Open.png" width="600"/>
+
+
+
+## Attack 2 - Hypdra RDP Brute Force
+
+In Attack 2, with RDP identified as an open port on port 3389, a brute force attack was launched against the RDP service using Hydra, a widely used automated login attack tool. Hydra was fired against the target using the command "hydra -l LabUser -P /usr/share/wordlists/rockyou.txt rdp://10.0.2.5 -t 4 -V". The Rockyou.txt wordlist contains over 14 million real world passwords leaked from previous data breaches. Hydra fired repeated login attempts against the target machine, generating multiple authentication failures before being blocked by Windows connection limiting. Despite not successfully authenticating, the attack generated significant log activity which simulated a real world brute force scenario and also tested Wazuh's detection capabilities.
+
+
+---
+
+## Phase 8 - Alert Analysis
+
+Phase 8 showcases the true power of the SOC Lab. The Wazuh agents collected the resulting telemetry from both attacks and forwarded it to the Wazuh dashboard for analysis. Across the full day, 482 total security events were generated, however this doesnt mean all of these events were malicious or exploitations. A significant portion of these events were normal Windows system events such as service startups and policy changes. This highlights the core SOC analyst skill, triaging several hundred events to identify the critical ones, or the ones of importance. Of the 482 events, 14 were
+authentication failures and 0 successful authentications recorded directly corresponding to the Hydra brute force exploit we ran against the target machine. The Wazuh dashboard also mapped the detected activity to the MITRE ATT&CK framework, identifying Credential Access and Defense Evasion as the top tactics.
+
+<img src="./screenshots/18-Wazuh-Agent-Dashboard.png" width="600"/>
+<img src="./screenshots/19-Wazuh-Events-Detected.png" width="600"/>
+<img src="./screenshots/21-Wazuh-Brute-Force-Detected.png" width="600"/>
+<img src="./screenshots/22-Wazuh-Authentication-Failures.png" width="600"/>
+<img src="./screenshots/23-MITRE-Attack-Detected.png" width="600"/>
+
+---
+
+## Analysis & Findings
+
+This lab demonstrated how quickly a real world attack can unfold and how a SIEM detects it. The Nmap scan performed the reconnaissance stage, successfully identifying four open ports on the target machine, 135, 139, 445 and 3389, exposing the attack surface to the adversary. The attack vector chosen was Hydra, a brute force tool that fires passwords from the Rockyou.txt wordlist containing over 14 million real world leaked passwords, targeting the RDP service on port 3389. This generated 14 authentication failure events, all of which were successfully detected and logged by the Wazuh SIEM. Of the 482 total events recorded throughout the lab, the majority were normal Windows system events which demonstrated the importance of triage in identifying the 14 critical authentication failures amongst the noise. The MITRE ATT&CK framework correctly classified the attacks under Credential Access and Defense Evasion, confirming Wazuh's ability to map real world attack techniques to a recognised threat intelligence framework.
+
