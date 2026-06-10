@@ -100,7 +100,7 @@ Phase 4 showcases the integration of deploying the recently installed Windows 10
 
 <img src="./screenshots/06-Windows10-Summary.png" width="600"/>
 <img src="./screenshots/07-Windows10-Network-Configured.png" width="600"/>
-
+<img src="./screenshots/10-Windows10-Desktop.png" width="600"/>
 ---
 
 ## Phase 5 - All VMs Ready
@@ -113,14 +113,16 @@ Phase 5 confirmed that all three virtual machines were running simultaneously an
 
 ## Phase 6 - Wazuh Dashboard Access & Agent Deployment
 
-Phase 6 brought the SOC lab to life. The Wazuh agent was deployed on the Windows 10 target machine using the MSI installer, establishing a direct communication path between the endpoint and the Wazuh server. Once installed and configured with the Manager IP set to 10.0.2.10, the agent began forwarding raw telemetry from the endpoint back to the Wazuh server. The Wazuh dashboard was then accessed via the Windows 10 machine at https://10.0.2.10 — made possible by all three virtual machines being interconnected on the same NAT Network infrastructure. The Windows 10 machine appeared as active in the dashboard, confirming the agent was successfully reporting. The lab was now fully operational and ready for attack simulation.
+Phase 6 brought the SOC lab to life. The Wazuh server was first assigned a static IP address of 10.0.2.10, ensuring the endpoint agent would always have a fixed address to report to. The Wazuh dashboard was then accessed at https://10.0.2.10, made possible by all three virtual machines being interconnected on the same NAT Network infrastructure. The Wazuh agent was deployed on the Windows 10 target machine using the MSI installer, establishing a direct communication path between the endpoint and the Wazuh server. Once installed and configured with the Manager IP set to 10.0.2.10, the agent began forwarding raw telemetry from the endpoint back to the Wazuh server. The Windows 10 machine appeared as active in the dashboard, confirming the agent was successfully reporting. The lab was now fully operational and ready for attack simulation.
 
+<img src="./screenshots/11-Wazuh-Static-IP.png" width="600"/>
 <img src="./screenshots/09-Wazuh-Logged-In.png" width="600"/>
 <img src="./screenshots/12-Wazuh-Dashboard-Login.png" width="600"/>
 <img src="./screenshots/13-Wazuh-Dashboard-Overview.png" width="600"/>
 <img src="./screenshots/14-SharedFolder-Mapped.png" width="600"/>
 <img src="./screenshots/15-Wazuh-Agent-Windows-Configured.png" width="600"/>
 <img src="./screenshots/16-Wazuh-Agent-Active.png" width="600"/>
+
 
 ---
 
