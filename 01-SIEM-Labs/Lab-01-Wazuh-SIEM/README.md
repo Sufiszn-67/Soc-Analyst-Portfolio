@@ -126,4 +126,4 @@ Phase 6 brought the SOC lab to life. The Wazuh server was first assigned a stati
 
 ---
 
-# Phase 7 - Attack Simulation
+## Phase 7 - Attack Simulation
