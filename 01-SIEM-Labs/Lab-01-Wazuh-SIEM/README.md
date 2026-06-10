@@ -103,7 +103,7 @@ Phase 4 showcases the integration of deploying the recently installed Windows 10
 
 ---
 
-## All VMs Ready
+## Phase 5 - All VMs Ready
 
 Phase 5 confirmed that all three virtual machines were running simultaneously and successfully connected on the same isolated NAT Network infrastructure. Having no obstacles at this was vital, it showcased that the lab infrastructure was correctly configured and ready for the proceeding phase. With the Wazuh server, Windows 10 target machine and Kali Linux attacker all operational and communicating with each other, the environment was fully prepared for attack simulation and threat detection.
 
@@ -111,5 +111,17 @@ Phase 5 confirmed that all three virtual machines were running simultaneously an
 
 ---
 
-## Wazuh Dashboard Access & Agent Deployment
+## Phase 6 - Wazuh Dashboard Access & Agent Deployment
 
+Phase 6 brought the SOC lab to life. The Wazuh agent was deployed on the Windows 10 target machine using the MSI installer, establishing a direct communication path between the endpoint and the Wazuh server. Once installed and configured with the Manager IP set to 10.0.2.10, the agent began forwarding raw telemetry from the endpoint back to the Wazuh server. The Wazuh dashboard was then accessed via the Windows 10 machine at https://10.0.2.10 — made possible by all three virtual machines being interconnected on the same NAT Network infrastructure. The Windows 10 machine appeared as active in the dashboard, confirming the agent was successfully reporting. The lab was now fully operational and ready for attack simulation.
+
+<img src="./screenshots/09-Wazuh-Logged-In.png" width="600"/>
+<img src="./screenshots/12-Wazuh-Dashboard-Login.png" width="600"/>
+<img src="./screenshots/13-Wazuh-Dashboard-Overview.png" width="600"/>
+<img src="./screenshots/14-SharedFolder-Mapped.png" width="600"/>
+<img src="./screenshots/15-Wazuh-Agent-Windows-Configured.png" width="600"/>
+<img src="./screenshots/16-Wazuh-Agent-Active.png" width="600"/>
+
+---
+
+# Phase 7 - Attack Simulation
