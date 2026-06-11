@@ -166,3 +166,14 @@ This lab demonstrated how quickly a real world attack can unfold and how a SIEM 
 ## Recommended SOC Response
 
 In a real SOC environment, the recommended Tier 1 response to these alerts would begin with triaging the 482 total events to separate the normal Windows system activity from the 14 critical authentication failures. Once identified, the source IP of the attack at 10.0.2.6 would be cross referenced against known threat intelligence sources to determine whether it is a recognised malicious actor. The analyst would then verify whether any of the authentication attempts were successful. If so, immediate containment of the affected endpoint at 10.0.2.5 would be required to prevent any lateral movement across the network. The incident would then be escalated to a Tier 2 analyst with a full handoff including the timeline, source IP, affected machine, attack type and all relevant indicators of compromise. Recommended remediation steps would include blocking the source IP at the firewall level, re-enabling Windows Firewall on the endpoint, implementing an account lockout policy after a set number of failed login attempts and disabling RDP if it is not operationally required. A formal incident report would be produced documenting all findings, actions taken and recommendations to prevent recurrence.
+
+
+---
+
+## Lessons Learned
+
+This lab provided several key lessons and takeaways.
+* **Attack Surface Reduction:** Adversaries exploit all available attack surfaces. Closing unnecessary open ports and disabling unused services is critical to reducing exposure.
+* **Visibility of Failed Attempts:** A failed attack still generates detectable evidence. The Hydra brute force never authenticated successfully, yet Wazuh still captured and surfaced every attempt.
+* **Alert Triage Efficiency:** SOC analysts face hundreds of alerts daily. Effective triage is what separates noise from genuine threats, demonstrated by identifying 14 critical alerts amongst 482 total events.
+* **Future Telemetry Enhancements:** Future iterations of this lab will incorporate Sysmon to enrich endpoint telemetry, providing deeper visibility into process-level and network activity.
